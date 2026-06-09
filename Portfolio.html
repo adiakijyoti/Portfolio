@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Jyoti Sharma</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo">Jyoti Sharma</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li>
+                <a href="#cetifications" onclick="toggleMenu()"
+                  >Certifications</a
+                >
+              </li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="./assets/profile-picture.png"
+          alt="Jyoti Sharma profile picture"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Jyoti Sharma</h1>
+        <p class="section_text_p2">Software Developer / Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Jyoti Sharma CV..pdf')"
+          >
+            Download CV
+          </button>
+
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('https://github.com/adiakijyoti')"
+          >
+            View My work
+          </button>
+        </div>
+        <div id="social-container">
+          <img
+            src="./assets/LinkedIn.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/jyoti-sharma-713229257/'
+            "
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/adiakijyoti'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/skills.png" alt="Skills icon" class="icon" />
+              <h3 class="">Skills</h3>
+              <p>Software Developer / Web Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.jpg"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Full Stack Development Programme <br>Itonlinelearning.com </br></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>I am a Junior Full Stack Developer with experience in React, JavaScript, 
+              Python, PHP, SQL, and cloud technologies (AWS & Azure). 
+              I am passionate about building reliable, userfocused applications. 
+              I am actively seeking opportunities where I can grow, collaborate, and 
+              contribute to impactful engineering teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section_text_p1 ">Explore More</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>JavaScript <Script></Script></h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>UX/UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title ">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>SQL <Script></Script></h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>Commandline</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="skills icon" class="icon">
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            
+
+    </section>
+
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project1.jpg" alt="Project 1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project one</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adiakijyoti/Website-Design'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://website-design-j3ci2dk0j-adiakijyoti-2422s-projects.vercel.app/'">
+            Live Demo
+          </button>
+        </div>
+       </div>
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project2.jpg" alt="Project 2" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adiakijyoti/Website-Design'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://website-design-j3ci2dk0j-adiakijyoti-2422s-projects.vercel.app/'">
+            Live Demo
+          </button>
+        </div>
+       </div>
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project3.jpg" alt="Project 3" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adiakijyoti/Movie-Review-App-React'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://movie-review-app-react-kxu7mgczy-adiakijyoti-2422s-projects.vercel.app/'">
+            Live Demo
+          </button>
+        </div>
+       </div>
+       </div>
+      </div>
+    </section>
+    <section id="certifications">
+      <p class="section_text_p1">View My</p>
+      <h1 class="title">Certificates</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/aws.jpg" alt="aws certificate" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">AWS CLF-02</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/AWS Certified Cloud Practitioner.pdf')" >
+            View
+          </button>
+          
+        </div>
+       </div>
+       <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/azure.jpg" alt="azure 900" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title certifications">Azure 900</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Microsoft_Azure_900.pdf')">
+            view
+          </button>
+          
+        </div>
+       </div>
+       
+       </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="email icon" class="icon contact-icon"/>
+          <p><a href="mailto:adiakijyoti@gmail.com">adiakijyoti@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/LinkedIn.png" alt="linkedin icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/jyoti-sharma-713229257/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p>Copyright &#169; 2026 Jyoti Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
